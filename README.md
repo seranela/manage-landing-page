@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/manage-landing-page-eScN7Bojuh](https://www.frontendmentor.io/solutions/manage-landing-page-eScN7Bojuh)
+- Live Site URL: [https://seranela.github.io/manage-landing-page/](https://seranela.github.io/manage-landing-page/)
 
 ## My process
 
