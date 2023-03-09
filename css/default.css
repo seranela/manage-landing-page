@@ -489,11 +489,19 @@ p {
 	transition: filter 0.3s;
 }
 
+/* This container creates a defined vertical space so page content doesn't
+	shift when the invalid error message appears during email subscription. */
+.subscriber-error-container {
+	display: table-cell;
+	height: 1.5rem;
+	padding: 0 1.4em;
+	vertical-align: middle;
+}
+
 .subscriber-error-message {
 	display: none;
 	font-size: 0.8rem;
 	color: var(--color-primary-bright-red);
-	padding: 0.5em 1.5em;
 }
 
 /* Footer - Nav */

@@ -176,15 +176,17 @@
 			<!-- Subscriber -->
 			<form action="#" method="post" class="subscriber-form">
 				<div class="subscriber-inputs">
-					<input type="email" name="email" id="subscriber-email" class="subscriber-email" placeholder="Updates in your inbox…" required>
+					<input type="email" name="email" id="subscriber-email" class="subscriber-email" placeholder="Updates in your inbox…" aria-errormessage="subscriber-error" required>
 					<label for="subscriber-email" class="sr-only">Email Address</label>
 					<button type="submit" class="subscriber-button">Go</button>
 				</div>
-				<div id="error-empty" class="subscriber-error-message">
-					Please enter an email address
-				</div>
-				<div id="error-format" class="subscriber-error-message">
-					Please enter a valid email address
+				<div id="subscriber-error" class="subscriber-error-container" role="alert" aria-atomic="true">
+					<span id="error-empty" class="subscriber-error-message">
+						Please enter an email address
+					</span>
+					<span id="error-format" class="subscriber-error-message">
+						Please enter a valid email address
+					</span>
 				</div>
 			</form>
 

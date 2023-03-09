@@ -51,13 +51,13 @@ function subscribe(e) {
 	const inputEmail = document.querySelector('#subscriber-email');
 
 	if (inputEmail.validity.valueMissing) {
-		inputEmail.classList.add('subscriber-email-error');
+		inputEmail.setAttribute('aria-invalid', 'true');
 		document.querySelector('#error-empty').style.display = 'block';
 	} else if (inputEmail.validity.typeMismatch) {
-		inputEmail.classList.add('subscriber-email-error');
+		inputEmail.setAttribute('aria-invalid', 'true');
 		document.querySelector('#error-format').style.display = 'block';
 	} else {
-		inputEmail.classList.remove('subscriber-email-error');
+		inputEmail.setAttribute('aria-invalid', 'false');
 		document.querySelector('#error-empty').style.display = 'none';
 		document.querySelector('#error-format').style.display = 'none';
 	}
