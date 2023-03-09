@@ -35,13 +35,22 @@ button.addEventListener('click', toggleMenu);
 const root = document.querySelector(':root');
 
 function slideTestimonials(e) {
-	root.style.setProperty('--t-index', parseInt(e.target.value) - 1);
+	let currentTestimonial = 1;
+	if (e) {
+		currentTestimonial = parseInt(e.target.value);
+	} else {
+		currentTestimonial = parseInt(document.querySelector('.testimonial-button:checked').value);
+	}
+	root.style.setProperty('--t-index', currentTestimonial - 1);
 }
 
 const testimonials = document.querySelectorAll('.testimonial-button');
 testimonials.forEach((testimonial) => {
 	testimonial.addEventListener('click', slideTestimonials);
 });
+
+// Set selected testimonial on page load/refresh
+slideTestimonials();
 
 /* --- Subscriber Form (Footer) --- */
 
